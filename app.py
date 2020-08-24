@@ -3,8 +3,12 @@ from chatterbot.trainers import ListTrainer
 #creating a new chatbot
 chatbot = ChatBot('ROMO')
 trainer = ListTrainer(chatbot)
-trainer.train([ 'hi, can I help you find a course', 'sure I\'\d love to find you a course', 'your course have been selected'])
+trainer.train(["How are you?",
+    "I am good.",
+    "That is good to hear.",
+    "Thank you",
+    "You are welcome.",])
  
 #getting a response from the chatbot
-response = chatbot.get_response("Hello")
+response = chatbot.get_response("Bye")
 print(response)
